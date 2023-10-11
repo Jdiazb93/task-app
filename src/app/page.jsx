@@ -12,7 +12,7 @@ export default async function Home() {
         want to see this code, you can go to{" "}
         <a
           className="text-blue-700 underline text-lg"
-          href="https://github.com/Jdiazb93?tab=repositories"
+          href="https://github.com/Jdiazb93/task-app"
           target="_blank"
         >
           Github
