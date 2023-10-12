@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Navbar as NavbarOptions } from '@/utils/navbar'
 
 export default function Navbar() {
   return (
@@ -9,26 +10,15 @@ export default function Navbar() {
         </div>
         <nav className="font-bold text-lg">
           <ul className="flex gap-5">
-            <Link href="/">
-              <li className="p-3 hover:bg-slate-800 rounded-lg cursor-pointer">
-                Home
-              </li>
-            </Link>
-            <Link href="/tasks">
-              <li className="p-3 hover:bg-slate-800 rounded-lg cursor-pointer">
-                Tasks
-              </li>
-            </Link>
-            <Link href="/new">
-              <li className="p-3 hover:bg-slate-800 rounded-lg cursor-pointer">
-                New Task
-              </li>
-            </Link>
-            <Link href="/about">
-              <li className="p-3 hover:bg-slate-800 rounded-lg cursor-pointer">
-                About
-              </li>
-            </Link>
+            {NavbarOptions.map((nav, index) => {
+              return (
+                <Link href={nav.path} key={index}>
+                  <li className="p-3 hover:bg-slate-800 rounded-lg cursor-pointer">
+                    {nav.name}
+                  </li>
+                </Link>
+              )
+            })}
           </ul>
         </nav>
       </div>
