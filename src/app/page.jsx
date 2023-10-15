@@ -1,5 +1,10 @@
 export const dynamic = "force-dynamic";
 
+export const metadata = {
+  title: 'Tasks Manager',
+  description: 'Test App to generate tasks using only Nextjs on back and front.',
+}
+
 export default async function Home() {
   return (
     <section className="container mx-auto mt-5">

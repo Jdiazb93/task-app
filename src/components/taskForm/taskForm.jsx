@@ -77,15 +77,15 @@ export default function TaskForm() {
         : 
         <form className="grid py-5" onSubmit={handleSubmit}>
           <label className="text-2xl font-semibold mb-2">Title</label>
-          <input placeholder='Insert title...' className="mb-5 rounded-lg p-3 text-black focus:scale-105 ease-in-out duration-100" name="title" value={formValues.title} onChange={(e) => setFormValues({ ...formValues, title: e.target.value })} />
+          <input placeholder='Insert title...' className="bg-white mb-5 rounded-lg p-3 text-black focus:scale-105 ease-in-out duration-100" name="title" value={formValues.title} onChange={(e) => setFormValues({ ...formValues, title: e.target.value })} />
           <label className="text-2xl font-semibold mb-2">Description</label>
-          <textarea placeholder='Insert description...' className="mb-5 rounded-lg p-3 text-black focus:scale-105 ease-in-out duration-100" name="description" cols="5" value={formValues.description} onChange={(e) => setFormValues({ ...formValues, description: e.target.value })} />
+          <textarea placeholder='Insert description...' className="bg-white mb-5 rounded-lg p-3 text-black focus:scale-105 ease-in-out duration-100" name="description" cols="5" value={formValues.description} onChange={(e) => setFormValues({ ...formValues, description: e.target.value })} />
           <label className="text-2xl font-semibold mb-2">Created by</label>
-          <input placeholder='Created by...' className="mb-5 rounded-lg p-3 text-black focus:scale-105 ease-in-out duration-100" name="createdBy" value={formValues.createdBy} onChange={(e) => setFormValues({ ...formValues, createdBy: e.target.value })} />
+          <input placeholder='Created by...' className="bg-white mb-5 rounded-lg p-3 text-black focus:scale-105 ease-in-out duration-100" name="createdBy" value={formValues.createdBy} onChange={(e) => setFormValues({ ...formValues, createdBy: e.target.value })} />
           <label className="text-2xl font-semibold mb-2">Assign to</label>
-          <input placeholder='Assign to...' className="mb-5 rounded-lg p-3 text-black focus:scale-105 ease-in-out duration-100" name="assign" value={formValues.assignTo} onChange={(e) => setFormValues({ ...formValues, assignTo: e.target.value })} />
+          <input placeholder='Assign to...' className="bg-white mb-5 rounded-lg p-3 text-black focus:scale-105 ease-in-out duration-100" name="assign" value={formValues.assignTo} onChange={(e) => setFormValues({ ...formValues, assignTo: e.target.value })} />
           <div className="w-full flex justify-between">
-              <button type="submit" className="bg-blue-600 hover:bg-blue-700 focus:scale-105 hover:scale-105 ease-in-out duration-100 w-20 h-10 rounded-md font-bold">
+              <button type="submit" className="bg-green-600 hover:bg-green-700 dark:bg-blue-600 dark:hover:bg-blue-700 focus:scale-105 hover:scale-105 ease-in-out duration-100 w-20 h-10 rounded-md font-bold">
                   {params.taskId ? 'Update': 'Create'}
               </button>
               {params?.taskId && <button type="button" className="bg-red-500 hover:bg-red-600 focus:scale-105 hover:scale-105 ease-in-out duration-100 w-20 h-10 rounded-md font-bold" onClick={onDeleteHandle}>
