@@ -1,6 +1,6 @@
 export default function AboutPage() {
   return (
-    <section className="container mx-auto py-5">
+    <section className="container mx-auto py-5 max-w-[1024px] px-6">
       <div>
         <h3 className="text-2xl font-bold ">About</h3>
         <p>

@@ -7,7 +7,7 @@ export const metadata = {
 
 export default async function Home() {
   return (
-    <section className="container mx-auto mt-5">
+    <section className="container mx-auto mt-5 max-w-[1024px] px-6">
       <h3 className="font-bold text-2xl">
         Project generated with Next JS and Tailwind
       </h3>

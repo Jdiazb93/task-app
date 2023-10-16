@@ -1,4 +1,4 @@
-export const Navbar = [
+export const NavbarOptions = [
     { name: "Home", path: '/' },
     { name: "Tasks", path: '/tasks' },
     { name: "New Task", path: '/new' },

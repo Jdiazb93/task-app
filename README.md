@@ -1,6 +1,6 @@
 This is a test project builded with [Next.js](https://nextjs.org/), [TailwindCSS](https://tailwindcss.com/), [Prisma](https://www.prisma.io/) and [Vercel](https://vercel.com/)
 
-To see this you can visit [URL](https://tasks-k0320gxrq-jonathan-diazs-projects.vercel.app/)
+To see this project you can visit [Project](https://tasks-ownlgmdrq-jonathan-diazs-projects.vercel.app/)
 
 It is a simple task manager
 You can switch between dark and light mode
